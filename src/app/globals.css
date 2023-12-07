@@ -1,0 +1,60 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --main-container: 1250px;
+  --container-gutters: 24px;
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+      max-width: calc(var(--main-container) + var(--container-gutters));
+      padding-left: calc(var(--container-gutters) / 2);
+      padding-right: calc(var(--container-gutters) / 2);
+      &.px-0 {
+          max-width: var(--main-container);
+      }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .container-fluid.px-0 {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+
+      .row {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+      }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@media (min-width: 1420px) {
+  .header-layout5 {
+      --main-container: 1720px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .header-layout5 {
+      --main-container: 100%;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
