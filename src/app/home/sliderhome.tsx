@@ -11,7 +11,7 @@ import { isPhone } from '../../utils/device'
 import cx from '../../utils/cx'
 import { BackgroundImage } from '../../components/Image'
 
-type PropType = {
+type PropType = { 
     slides: number[]
     options?: EmblaOptionsType
 }
