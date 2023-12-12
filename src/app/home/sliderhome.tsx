@@ -27,7 +27,7 @@ const SliderHome: React.FC<PropType> = (props) => {
             <BackgroundImage 
             className={cx(
                 'fixed inset-0 flex flex-col items-center justify-center w-[1920px] h-[810px] top-20 lg:top-28 bg-contain bg-no-repeat bg-center left-0 bottom-0' ,
-                isPhone && 'w-full h-[1200px] top-0',
+                isPhone && 'w-full h-[400px] top-[95px]',
             )}
             src={isPhone ? herobgmobile.src : herobg.src}
             >
@@ -63,7 +63,7 @@ const SliderHome: React.FC<PropType> = (props) => {
                         </div>
                     </div>
                 ) : (
-                    <div className='text-white w-full h-full pt-9'>this is mobile</div>
+                    <div className='text-white w-full h-full pt-9'>this is mobile test</div>
                 )}
 
             </BackgroundImage>
